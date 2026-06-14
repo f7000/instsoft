@@ -1,49 +1,201 @@
-<!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Instsoft</title>
-  <style>
-    :root {
-      color-scheme: light dark;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #f6f7f9;
-      color: #1d2430;
-    }
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>InstSoft Feature Catalog Draft</title>
+    <meta name="description" content="InstSoft homepage draft featuring ComicScreen and TextClip">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="InstSoft home">
+        <strong>InstSoft</strong>
+      </a>
+      <nav class="nav-links" aria-label="Page sections">
+        <a href="#comicscreen">ComicScreen</a>
+        <a href="#textclip">TextClip</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </nav>
+    </header>
 
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      padding: 24px;
-    }
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-art">
+          <img src="assets/header/dev_header_optimized.webp" alt="InstSoft watercolor developer header">
+          <p class="hero-tagline">We build easy-to-use, useful apps.</p>
+        </div>
 
-    main {
-      max-width: 640px;
-      text-align: center;
-    }
+        <div class="hero-intro">
+          <p>InstSoft makes practical Android apps for opening, managing, previewing, and reading files. ComicScreen focuses on image and comic files. TextClip focuses on document reading.</p>
+        </div>
+      </section>
 
-    h1 {
-      margin: 0 0 12px;
-      font-size: clamp(2.25rem, 7vw, 4.5rem);
-      font-weight: 800;
-      letter-spacing: 0;
-    }
+      <section id="comicscreen" class="app-section comic-section" aria-labelledby="comic-title">
+        <div class="app-lead">
+          <div class="app-heading">
+            <img src="assets/icons/comicscreen_icon.webp" alt="ComicScreen icon">
+            <div class="app-title">
+              <h2 id="comic-title">ComicScreen - PDF, ComicReader</h2>
+              <p class="app-description">
+                File management and show images, comics and pictures in compressed cbr, pdf file.
+                Functions for easy management and display of images.
+              </p>
+            </div>
+          </div>
+          <a class="play-button" href="https://play.google.com/store/apps/details?id=com.viewer.comicscreen" aria-label="View ComicScreen on Google Play">
+            <img class="play-icon" src="assets/icons/play_icon.svg" alt="Google Play">
+          </a>
+        </div>
 
-    p {
-      margin: 0;
-      font-size: 1.125rem;
-      line-height: 1.7;
-      color: #4b5565;
-    }
-  </style>
-</head>
-<body>
-  <main>
-    <h1>Instsoft</h1>
-    <p>간단한 첫 페이지가 GitHub에 올라왔습니다.</p>
-  </main>
-</body>
+        <div class="feature-board">
+          <article>
+            <h3>Supported compressed files/type</h3>
+            <div class="tag-list">
+              <span>zip</span><span>rar</span><span>cbz</span><span>cbr</span><span>pdf</span>
+            </div>
+          </article>
+          <article>
+            <h3>Supported images</h3>
+            <div class="tag-list">
+              <span>jpg</span><span>png</span><span>gif</span><span>bmp</span><span>tiff</span><span>webp</span><span>avif</span>
+            </div>
+          </article>
+          <article>
+            <h3>File management</h3>
+            <ul>
+              <li>Folder, File Explorer with Search, Rename, Delete</li>
+              <li>USB-OTG drive support</li>
+              <li>SMB and FTP network support</li>
+              <li>Drag and Drop for files, folders, and more</li>
+              <li>See list images in folders</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Reading and preview</h3>
+            <ul>
+              <li>Smooth image scrolling</li>
+              <li>Bookmark preview</li>
+              <li>Zip file quick view</li>
+              <li>Page move preview</li>
+              <li>Page move by hardware key</li>
+            </ul>
+          </article>
+          <article>
+            <h3>View modes</h3>
+            <ul>
+              <li>Horizontal view mode, 2 pages</li>
+              <li>Vertical view mode, 1 page</li>
+              <li>Automatic page resort</li>
+              <li>Cut margin</li>
+              <li>Chapter drawer when a folder exists in a zip file</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="screenshot-strip" aria-label="ComicScreen screenshots">
+          <figure><img src="assets/screenshots/comicscreen/webp/screen_0_p.webp" alt="ComicScreen file explorer"><figcaption>Explorer</figcaption></figure>
+          <figure><img src="assets/screenshots/comicscreen/webp/screen_1_p.webp" alt="ComicScreen image control"><figcaption>Controls</figcaption></figure>
+          <figure><img src="assets/screenshots/comicscreen/webp/screen_2_p.webp" alt="ComicScreen comic preview"><figcaption>Preview</figcaption></figure>
+          <figure><img src="assets/screenshots/comicscreen/webp/screen_3_p.webp" alt="ComicScreen chapter drawer"><figcaption>Chapters</figcaption></figure>
+          <figure><img src="assets/screenshots/comicscreen/webp/screen_4_p.webp" alt="ComicScreen margin cut"><figcaption>Crop</figcaption></figure>
+          <figure><img src="assets/screenshots/comicscreen/webp/screen_5_p.webp" alt="ComicScreen bookmark preview"><figcaption>Bookmark</figcaption></figure>
+          <figure><img src="assets/screenshots/comicscreen/webp/screen_6_p.webp" alt="ComicScreen storage list"><figcaption>Storage</figcaption></figure>
+        </div>
+      </section>
+
+      <section id="textclip" class="app-section text-section" aria-labelledby="text-title">
+        <div class="app-lead">
+          <div class="app-heading">
+            <img src="assets/icons/textclip_icon.webp" alt="TextClip icon">
+            <div class="app-title">
+              <h2 id="text-title">TextClip - TXT, EPUB, PDF Viewer</h2>
+              <p class="app-description">
+                Textclip is a text viewer that is able to read TEXT, E-PUB, and PDF files.
+                Textclip is designed to read document files quick and convenient on your Android device.
+              </p>
+            </div>
+          </div>
+          <a class="play-button" href="https://play.google.com/store/apps/details?id=com.reader.textclip" aria-label="View TextClip on Google Play">
+            <img class="play-icon" src="assets/icons/play_icon.svg" alt="Google Play">
+          </a>
+        </div>
+
+        <div class="feature-board">
+          <article>
+            <h3>Supported document file format</h3>
+            <div class="tag-list">
+              <span>TXT</span><span>E-PUB</span><span>PDF</span><span>Contains ads</span>
+            </div>
+          </article>
+          <article>
+            <h3>Document browsing</h3>
+            <ul>
+              <li>Folder and file explorer</li>
+              <li>Bookmark</li>
+              <li>History</li>
+              <li>Thumbnail</li>
+              <li>Table of contents</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Reading modes</h3>
+            <ul>
+              <li>Horizontal View</li>
+              <li>Vertical View</li>
+              <li>Two-sided View</li>
+              <li>Page number</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Reading tools</h3>
+            <ul>
+              <li>Highlight</li>
+              <li>Mapping page movement with hardware key</li>
+              <li>TTS</li>
+              <li>Browse and see text documents like a viewer</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="screenshot-strip" aria-label="TextClip screenshots">
+          <figure><img src="assets/screenshots/textclip/webp/screen_1_t.webp" alt="TextClip document explorer"><figcaption>Documents</figcaption></figure>
+          <figure><img src="assets/screenshots/textclip/webp/screen_2_t.webp" alt="TextClip bookmark and history"><figcaption>Bookmarks</figcaption></figure>
+          <figure><img src="assets/screenshots/textclip/webp/screen_3_t.webp" alt="TextClip highlighted reading"><figcaption>Highlight</figcaption></figure>
+          <figure><img src="assets/screenshots/textclip/webp/screen_4_t.webp" alt="TextClip table of contents"><figcaption>Contents</figcaption></figure>
+          <figure><img src="assets/screenshots/textclip/webp/screen_5_t.webp" alt="TextClip two-sided reading"><figcaption>Two-sided</figcaption></figure>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <strong>InstSoft</strong>
+        </div>
+        <address>
+          <span class="contact-item">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M12 21s7-5.1 7-12a7 7 0 0 0-14 0c0 6.9 7 12 7 12Z"></path>
+                <circle cx="12" cy="9" r="2.5"></circle>
+              </svg>
+            </span>
+            <span>3F, V1394, 6 Teheran-ro 79-gil, Gangnam-gu, Seoul, 06158, Republic of Korea</span>
+          </span>
+          <a class="contact-item" href="mailto:instsoftcs@gmail.com">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <rect x="3.5" y="5.5" width="17" height="13" rx="2"></rect>
+                <path d="m4.5 7 7.5 6 7.5-6"></path>
+              </svg>
+            </span>
+            <span>instsoftcs@gmail.com</span>
+          </a>
+        </address>
+      </div>
+    </footer>
+  </body>
 </html>
+
